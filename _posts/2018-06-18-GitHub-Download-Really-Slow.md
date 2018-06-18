@@ -26,6 +26,8 @@ Look up
 * github.global.ssl.fastly.net
 and copy down the resulting IP address.
 
+![](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/ip.png)
+
 ### Change Hosts
 
 * Mac

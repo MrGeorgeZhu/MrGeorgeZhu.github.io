@@ -295,27 +295,31 @@ Look up</p>
 and copy down the resulting IP address.</li>
 </ul>
 
+<p><img src="https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/ip.png" alt="" /></p>
+
 <h3 id="change-hosts">Change Hosts</h3>
 
 <ul>
   <li>Mac</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Open /etc/hosts using your favorite editor (e.g. Nano or Vi).
-    Add these two lines: 
-    &lt;Corresponding IP address&gt; github.com
-    &lt;Corresponding IP address&gt; github.global.ssl.fastly.net
+<p>Open <code class="highlighter-rouge">/etc/hosts</code> using your favorite editor (e.g. Nano or Vi).
+Add these two lines:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;Corresponding IP address&gt; github.com
+  &lt;Corresponding IP address&gt; github.global.ssl.fastly.net
 </code></pre></div></div>
+<p>Then flush DNS using <code class="highlighter-rouge">sudo killall -HUP mDNSResponder</code> command</p>
 
 <ul>
   <li>Windows</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	Open C:\Windows\System32\drivers\etc\hosts using your favorite editor
-	Add the same two lines:
-	&lt;Corresponding IP address&gt; github.com
+<p>Open <code class="highlighter-rouge">C:\Windows\System32\drivers\etc\hosts</code> using your favorite editor
+Add the same two lines:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	&lt;Corresponding IP address&gt; github.com
 	&lt;Corresponding IP address&gt; github.global.ssl.fastly.net
 </code></pre></div></div>
+<p>Then flush DNS using <code class="highlighter-rouge">ipconfig /flushdns</code> command</p>
 
 <p>After changing hosts download speed became 1 MB/s!</p>
 </div>
