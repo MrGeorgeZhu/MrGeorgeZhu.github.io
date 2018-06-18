@@ -286,7 +286,7 @@ was pointing to a slow host.</p>
 
 <h3 id="find-fastest-hosts">Find Fastest Hosts</h3>
 
-<p>Use https://www.ipaddress.com/ to directly find the fastest IP address to connect
+<p>Use <code class="highlighter-rouge">https://www.ipaddress.com/</code> to directly find the fastest IP address to connect
 to GitHub.
 Look up</p>
 <ul>
@@ -295,7 +295,7 @@ Look up</p>
 and copy down the resulting IP address.</li>
 </ul>
 
-<p><img src="https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/ip.png" alt="" /></p>
+<p><img src="https://raw.githubusercontent.com/mrgeorgezhu/mrgeorgezhu.github.io/master/screenshots/ip.png" alt="" /></p>
 
 <h3 id="change-hosts">Change Hosts</h3>
 
@@ -305,8 +305,8 @@ and copy down the resulting IP address.</li>
 
 <p>Open <code class="highlighter-rouge">/etc/hosts</code> using your favorite editor (e.g. Nano or Vi).
 Add these two lines:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;Corresponding IP address&gt; github.com
-  &lt;Corresponding IP address&gt; github.global.ssl.fastly.net
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;Corresponding IP address&gt; github.com
+ &lt;Corresponding IP address&gt; github.global.ssl.fastly.net
 </code></pre></div></div>
 <p>Then flush DNS using <code class="highlighter-rouge">sudo killall -HUP mDNSResponder</code> command</p>
 
@@ -316,8 +316,8 @@ Add these two lines:</p>
 
 <p>Open <code class="highlighter-rouge">C:\Windows\System32\drivers\etc\hosts</code> using your favorite editor
 Add the same two lines:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	&lt;Corresponding IP address&gt; github.com
-	&lt;Corresponding IP address&gt; github.global.ssl.fastly.net
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;Corresponding IP address&gt; github.com
+ &lt;Corresponding IP address&gt; github.global.ssl.fastly.net
 </code></pre></div></div>
 <p>Then flush DNS using <code class="highlighter-rouge">ipconfig /flushdns</code> command</p>
 
