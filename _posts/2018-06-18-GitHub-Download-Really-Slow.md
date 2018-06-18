@@ -19,7 +19,7 @@ was pointing to a slow host.
 
 ### Find Fastest Hosts
 
-Use https://www.ipaddress.com/ to directly find the fastest IP address to connect
+Use `https://www.ipaddress.com/` to directly find the fastest IP address to connect
 to GitHub.
 Look up
 * github.com
@@ -35,8 +35,8 @@ and copy down the resulting IP address.
 Open `/etc/hosts` using your favorite editor (e.g. Nano or Vi).
 Add these two lines:
 ``` 
-  <Corresponding IP address> github.com
-  <Corresponding IP address> github.global.ssl.fastly.net
+ <Corresponding IP address> github.com
+ <Corresponding IP address> github.global.ssl.fastly.net
 ```
 Then flush DNS using `sudo killall -HUP mDNSResponder` command
 
@@ -45,8 +45,8 @@ Then flush DNS using `sudo killall -HUP mDNSResponder` command
 Open `C:\Windows\System32\drivers\etc\hosts` using your favorite editor
 Add the same two lines:
 ```
-	<Corresponding IP address> github.com
-	<Corresponding IP address> github.global.ssl.fastly.net
+ <Corresponding IP address> github.com
+ <Corresponding IP address> github.global.ssl.fastly.net
 ```
 Then flush DNS using `ipconfig /flushdns` command
 
