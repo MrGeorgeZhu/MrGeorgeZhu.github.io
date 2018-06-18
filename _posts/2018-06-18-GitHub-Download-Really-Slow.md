@@ -29,21 +29,23 @@ and copy down the resulting IP address.
 ### Change Hosts
 
 * Mac
-
-```    
-    Open /etc/hosts using your favorite editor (e.g. Nano or Vi).
-    Add these two lines: 
-    <Corresponding IP address> github.com
-    <Corresponding IP address> github.global.ssl.fastly.net
+  
+Open `/etc/hosts` using your favorite editor (e.g. Nano or Vi).
+Add these two lines:
+``` 
+  <Corresponding IP address> github.com
+  <Corresponding IP address> github.global.ssl.fastly.net
 ```
+Then flush DNS using `sudo killall -HUP mDNSResponder` command
 
 * Windows
 
-```	
-	Open C:\Windows\System32\drivers\etc\hosts using your favorite editor
-	Add the same two lines:
+Open `C:\Windows\System32\drivers\etc\hosts` using your favorite editor
+Add the same two lines:
+```
 	<Corresponding IP address> github.com
 	<Corresponding IP address> github.global.ssl.fastly.net
 ```
+Then flush DNS using `ipconfig /flushdns` command
 
 After changing hosts download speed became 1 MB/s!
