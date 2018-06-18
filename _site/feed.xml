@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-06-18T11:56:19+08:00</updated><id>http://localhost:4000/</id><title type="html">George’s Blog</title><subtitle>This is a blog meant to journalize George's programming career as well as how he solves  the problems he encounted. If this happens to help anyone, he will be really happy! :)
+</subtitle><author><name>George</name><email>zyqgeorge@gmail.com</email></author><entry><title type="html">GitHub Clone/Push/Pull really slow in China</title><link href="http://localhost:4000/2018/06/18/GitHub-Download-Really-Slow.html" rel="alternate" type="text/html" title="GitHub Clone/Push/Pull really slow in China" /><published>2018-06-18T00:00:00+08:00</published><updated>2018-06-18T00:00:00+08:00</updated><id>http://localhost:4000/2018/06/18/GitHub-Download-Really-Slow</id><content type="html" xml:base="http://localhost:4000/2018/06/18/GitHub-Download-Really-Slow.html">&lt;h2 id=&quot;context&quot;&gt;Context&lt;/h2&gt;
+
+&lt;p&gt;I just got back to China today form Seatlle. Today I was trying to clone, 
+push and pull from GitHub, but the download speed is really slow. (8 kb/s)&lt;/p&gt;
+
+&lt;p&gt;Later I found out that DNS works a little bit differently in China, so it 
+was pointing to a slow host.&lt;/p&gt;
+
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
+
+&lt;h3 id=&quot;find-fastest-hosts&quot;&gt;Find Fastest Hosts&lt;/h3&gt;
+
+&lt;p&gt;Use https://www.ipaddress.com/ to directly find the fastest IP address to connect
+to GitHub.
+Look up&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;github.com&lt;/li&gt;
+  &lt;li&gt;github.global.ssl.fastly.net
+and copy down the resulting IP address.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;change-hosts&quot;&gt;Change Hosts&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mac&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Open /etc/hosts using your favorite editor (e.g. Nano or Vi).
+    Add these two lines: 
+    &amp;lt;Corresponding IP address&amp;gt; github.com
+    &amp;lt;Corresponding IP address&amp;gt; github.global.ssl.fastly.net
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Windows&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	Open C:\Windows\System32\drivers\etc\hosts using your favorite editor
+	Add the same two lines:
+	&amp;lt;Corresponding IP address&amp;gt; github.com
+	&amp;lt;Corresponding IP address&amp;gt; github.global.ssl.fastly.net
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After changing hosts download speed became 1 MB/s!&lt;/p&gt;</content><author><name>George</name><email>zyqgeorge@gmail.com</email></author><category term="GitHub" /><category term="English" /><summary type="html">Context I just got back to China today form Seatlle. Today I was trying to clone, push and pull from GitHub, but the download speed is really slow. (8 kb/s) Later I found out that DNS works a little bit differently in China, so it was pointing to a slow host. Solution Find Fastest Hosts Use https://www.ipaddress.com/ to directly find the fastest IP address to connect to GitHub. Look up github.com github.global.ssl.fastly.net and copy down the resulting IP address. Change Hosts Mac Open /etc/hosts using your favorite editor (e.g. Nano or Vi). Add these two lines: &amp;lt;Corresponding IP address&amp;gt; github.com &amp;lt;Corresponding IP address&amp;gt; github.global.ssl.fastly.net Windows Open C:\Windows\System32\drivers\etc\hosts using your favorite editor Add the same two lines: &amp;lt;Corresponding IP address&amp;gt; github.com &amp;lt;Corresponding IP address&amp;gt; github.global.ssl.fastly.net After changing hosts download speed became 1 MB/s!</summary></entry></feed>
